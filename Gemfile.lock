@@ -84,12 +84,10 @@ GEM
     marcel (1.0.2)
     method_source (1.0.0)
     mini_mime (1.1.2)
-    mini_portile2 (2.6.1)
     minitest (5.15.0)
     msgpack (1.4.2)
     nio4r (2.5.8)
-    nokogiri (1.12.5)
-      mini_portile2 (~> 2.6.1)
+    nokogiri (1.12.5-x86_64-linux)
       racc (~> 1.4)
     pg (1.2.3)
     puma (5.5.2)
@@ -127,7 +125,7 @@ GEM
     rake (13.0.6)
     reline (0.3.1)
       io-console (~> 0.5)
-    thor (1.1.0)
+    thor (1.2.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
     websocket-driver (0.7.5)
@@ -137,6 +135,7 @@ GEM
 
 PLATFORMS
   ruby
+  x86_64-linux
 
 DEPENDENCIES
   bootsnap
@@ -146,8 +145,5 @@ DEPENDENCIES
   rails (~> 7.0.0)
   tzinfo-data
 
-RUBY VERSION
-   ruby 2.7.0p0
-
 BUNDLED WITH
-   2.1.2
+   2.2.27
