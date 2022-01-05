@@ -1,0 +1,2 @@
+class JobLine < ApplicationRecord
+end

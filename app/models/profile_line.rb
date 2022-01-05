@@ -1,0 +1,2 @@
+class ProfileLine < ApplicationRecord
+end
