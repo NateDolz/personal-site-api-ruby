@@ -20,11 +20,11 @@ default: &default
   host: database
   username: <%= ENV['DB_USERNAME'] %>
   password: <%= ENV['DB_PASSWORD'] %>
+  database: <%= ENV['DB_DATABASE'] %>
   pool: <%= ENV['RAILS_MAX_THREADS'] { 5 } %>
 
 development:
   <<: *default
-  database: <%= ENV['DB_DATABASE'] %>
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -58,7 +58,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: <%= ENV['DB_DATABASE_TESTING'] %>
+  host: database-testing
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -82,4 +82,3 @@ test:
 #
 production:
   <<: *default
-  database: <%= ENV['DB_DATABASE'] %>

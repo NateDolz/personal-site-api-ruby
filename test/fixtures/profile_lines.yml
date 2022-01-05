@@ -1,9 +1,9 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  profile_id: MyString
-  line: MyString
+profile_line_one:
+  profile: my_profile
+  line: Web Developer
 
-two:
-  profile_id: MyString
-  line: MyString
+profile_line_two:
+  profile: my_profile
+  line: The One

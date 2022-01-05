@@ -1,9 +1,9 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  job_id: MyString
-  line: MyString
+job_line_one:
+  line: hacker extrodinare
+  job: job_one
 
-two:
-  job_id: MyString
-  line: MyString
+job_line_two:
+  line: Can control the matrix at will
+  job: job_two

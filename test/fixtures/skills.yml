@@ -1,9 +1,26 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  type: 
-  description: MyString
+framework_skill:
+  skill_enum: framework
+  description: my framework
+  profile: my_profile
 
-two:
-  type: 
-  description: MyString
+language_skill:
+  skill_enum: language
+  description: my language
+  profile: my_profile
+
+skill_skill:
+  skill_enum: skill
+  description: my skill
+  profile: my_profile
+
+tech_skill:
+  skill_enum: technology
+  description: my tech
+  profile: my_profile
+
+other_skill:
+  skill_enum: other
+  description: my other
+  profile: my_profile

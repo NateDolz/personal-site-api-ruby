@@ -1,21 +1,11 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  first_name: MyString
-  last_name: MyString
-  email: MyString
-  phone: MyString
-  address: MyString
-  city: MyString
-  state: MyString
-  zip: MyString
-
-two:
-  first_name: MyString
-  last_name: MyString
-  email: MyString
-  phone: MyString
-  address: MyString
-  city: MyString
-  state: MyString
-  zip: MyString
+my_profile:
+  first_name: Thomas
+  last_name: Anderson
+  email: thomas.anderson@zion.com
+  phone: "555.555.5555"
+  address: 01 Main Street
+  city: Zion
+  state: CA
+  zip: "00001"

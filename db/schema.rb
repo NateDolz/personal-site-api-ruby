@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_01_05_175359) do
+ActiveRecord::Schema.define(version: 2022_01_05_184012) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,6 +25,8 @@ ActiveRecord::Schema.define(version: 2022_01_05_175359) do
     t.string "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "profile_id"
+    t.index ["profile_id"], name: "index_educations_on_profile_id"
   end
 
   create_table "job_lines", force: :cascade do |t|
@@ -42,6 +44,8 @@ ActiveRecord::Schema.define(version: 2022_01_05_175359) do
     t.string "role"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "profile_id"
+    t.index ["profile_id"], name: "index_jobs_on_profile_id"
   end
 
   create_table "profile_lines", force: :cascade do |t|
@@ -70,8 +74,13 @@ ActiveRecord::Schema.define(version: 2022_01_05_175359) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.enum "skill_enum", enum_type: "skill_type"
+    t.bigint "profile_id"
+    t.index ["profile_id"], name: "index_skills_on_profile_id"
   end
 
+  add_foreign_key "educations", "profiles"
   add_foreign_key "job_lines", "jobs"
+  add_foreign_key "jobs", "profiles"
   add_foreign_key "profile_lines", "profiles"
+  add_foreign_key "skills", "profiles"
 end

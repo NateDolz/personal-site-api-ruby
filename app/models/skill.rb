@@ -7,4 +7,5 @@ class Skill < ApplicationRecord
         other: 'other'
     }
     validates :skill_enum, inclusion: {in: skills.keys}
+    belongs_to :profile
 end

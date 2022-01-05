@@ -1,11 +1,7 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  graduation: 2022-01-05
-  name: MyString
-  description: MyString
-
-two:
-  graduation: 2022-01-05
-  name: MyString
-  description: MyString
+my_education:
+  graduation: 2021-01-01
+  name: upload
+  description: I know kung fu
+  profile: my_profile
