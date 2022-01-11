@@ -40,8 +40,8 @@ Education.create({
 
 # create jobs
 spur = Job.create({
-    start: Time.new(2019,02,01),
-    end: nil,
+    start_date: Time.new(2019,02,01),
+    end_date: nil,
     name: 'Spur',
     role: 'Full Stack Engineer',
     profile_id: profile.id     
@@ -75,8 +75,8 @@ JobLine.create([
 ])
 
 hexagon_1 = Job.create({
-    start: Time.new(2015,02,01),
-    end: Time.new(2017,07,01),
+    start_date: Time.new(2015,02,01),
+    end_date: Time.new(2017,07,01),
     name: 'Hexagon PPM',
     role: 'Software Analyst',
     profile_id: profile.id     
@@ -94,8 +94,8 @@ JobLine.create([
 ])
 
 hexagon_2 = Job.create({
-    start: Time.new(2017,07,01),    
-    end: Time.new(2019,02,01),
+    start_date: Time.new(2017,07,01),    
+    end_date: Time.new(2019,02,01),
     name: 'Hexagon PPM',
     role: 'Software Programmer',
     profile_id: profile.id
